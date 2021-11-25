@@ -18,7 +18,7 @@
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
                 </li>
             </ul>
         </div>

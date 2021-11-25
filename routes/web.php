@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FirstC;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dash.dashboard');
 });
+
+Route::get('/contact-us', [FirstC::class, 'contact'])->name('contact');
