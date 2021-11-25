@@ -22,4 +22,4 @@ Route::get('/', function () {
     return view('dash.dashboard');
 });
 
-Route::get('/contact-us', [FirstC::class, 'contact'])->name('contact');
+Route::get('/contact-us', [FirstC::class, 'contact'])->name('contact')->middleware('contact');
